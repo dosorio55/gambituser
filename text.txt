@@ -1,0 +1,4 @@
+recuerda que para iniciar un proyecto de go se necesita se lanza el commando
+go mod init 
+y su está fuera del go module path entonces debe agregarse el path, por ejemplo 
+github.com/your-username/gambituser
