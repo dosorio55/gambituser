@@ -19,7 +19,7 @@ func SignUp(data models.SignUp) error {
 
 	defer Db.Close()
 
-	query := fmt.Sprintf("INSERT INTO users (User_Email, User_UUID, User_DateAdd) VALUES ('%s', '%s', '%s', '%s')", data.Username, data.UserUUID, tools.GetTimeNow())
+	query := fmt.Sprintf("INSERT INTO users (User_Email, User_UUID, User_DateAdd) VALUES ('%s', '%s', '%s')", data.Username, data.UserUUID, tools.GetTimeNow())
 
 	fmt.Println("query: ", query)
 
