@@ -5,7 +5,6 @@ import (
 	"errors"
 	"fmt"
 	"os"
-
 	"github.com/aws/aws-lambda-go/events"
 	lambda "github.com/aws/aws-lambda-go/lambda"
 	"github.com/dosorio55/gambituser/awsgo"

@@ -17,6 +17,7 @@ func SignUp(data models.SignUp) error {
 		return err
 	}
 
+	// it means that the connection is going to be closed at the end of the function
 	defer Db.Close()
 
 	query := fmt.Sprintf("INSERT INTO users (User_Email, User_UUID, User_DateAdd) VALUES ('%s', '%s', '%s')", data.Username, data.UserUUID, tools.GetTimeNow())
